@@ -6,14 +6,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const tests = [
-  'phase2.test.js',
-  'phase3.test.js',
-  'phase4.test.js',
-  'api.test.js',
   'e2e-workflow.test.js',
-  'phase3-multi-queue-simulation.test.js',
-  'phase3-cold-start.test.js',
-  'advanced-queue.test.js',
   'full-system-qa.test.js',
 ];
 

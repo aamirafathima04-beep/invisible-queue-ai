@@ -243,13 +243,10 @@ invisible-queue-ai/
 │   │   └── socket/
 │   │       └── index.js           # Socket.IO rooms, events & security
 │   ├── tests/
-│   │   ├── api.test.js            # REST API integration tests
 │   │   ├── e2e-server.js          # In-memory mock server for offline QA
 │   │   ├── e2e-workflow.test.js   # Complete multi-role lifecycle test
-│   │   ├── phase2.test.js         # Virtual queue & security tests
-│   │   ├── phase3.test.js         # ML integration & benchmark tests
-│   │   ├── phase3-multi-queue-simulation.test.js # 14-patient simulation
-│   │   └── phase4.test.js         # Real-time Socket.IO & analytics tests
+│   │   ├── full-system-qa.test.js # Consolidated 14-area production QA suite
+│   │   └── run-all-tests.js       # Unified automated test runner
 │   └── package.json
 ├── frontend/
 │   ├── src/
@@ -280,7 +277,6 @@ invisible-queue-ai/
 │   │   └── services/
 │   │       └── predictor.py       # Scikit-learn inference & baseline fallback
 │   ├── data/
-│   │   ├── generate_dataset.py    # Synthetic hospital dataset generator
 │   │   └── synthetic_training_data.csv # 5,000 historical consultations
 │   ├── models/
 │   │   ├── waiting_time_model.joblib # Serialized Gradient Boosting model
@@ -290,8 +286,6 @@ invisible-queue-ai/
 │   ├── train.py                   # Model training & benchmark script
 │   ├── Dockerfile
 │   └── requirements.txt
-├── scripts/
-│   └── setup.sh                   # Local environment & dependency setup
 ├── .env.example
 ├── docker-compose.yml
 └── README.md
